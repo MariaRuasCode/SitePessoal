@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+  --highlight: #db1c1c;
+  --branco: #ececde;
+}
+body{
+    background-color: #272728;
+}
+header {
+    background-color: #1b1b1b;
+    overflow: hidden;
+   
+}
+
+
+
+header a {
+    float: right;
+  color: #f2f2f2 !important;
+  text-align: center;
+  padding: 14px 16px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+header .icon {
+    float: left;
+    font-family: "Raleway", sans-serif;
+    
+    font-style: normal;
+}
+
+header a:hover {
+    background-color: #2b2828;
+    color: black;
+}
+
+
+
+.carousel {
+   
+    margin: auto; 
+   
+  }
+  .carousel-inner img {
+    width: 90% !important;
+    height: 80% !important;
+    margin: auto;
+  }
+
+
+  #github-profile {
+    border-radius: 50%;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top: -100px; 
+   z-index: 1;
+
+   
+   border-radius: 50%; /* Optional: to make it circular */
+   border: 8px solid #fff; /* Optional: add a border to the image */
+  }
+
+
+  .titulo{
+    text-align: center !important;
+   
+    font-family: "Raleway", sans-serif;
+    color: var(--branco);
+    font-size: 70px;
+    position: relative;
+    top: -50px;
+  }
