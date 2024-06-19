@@ -5,6 +5,9 @@
 
   --highlight: #db1c1c;
   --branco: #ececde;
+  --cinza: #ccccc4;
+  --preto-claro: #272728;
+  --preto-escuro: #0f0f0f;
 }
 body{
     background-color: #272728;
@@ -14,7 +17,10 @@ header {
     overflow: hidden;
    
 }
-
+p {
+  color: var(--branco);
+  font-size: 25px;
+}
 
 
 header a {
@@ -26,7 +32,7 @@ header a {
   text-decoration: none;
   font-size: 25px;
 }
-header .icon {
+header .logo {
     float: left;
     font-family: "Raleway", sans-serif;
     
@@ -37,6 +43,7 @@ header a:hover {
     background-color: #2b2828;
     color: black;
 }
+
 
 
 
@@ -60,19 +67,49 @@ header a:hover {
    position: relative;
    top: -100px; 
    z-index: 1;
-
-   
+    width: 17%;
    border-radius: 50%; /* Optional: to make it circular */
    border: 8px solid #fff; /* Optional: add a border to the image */
   }
 
 
-  .titulo{
-    text-align: center !important;
+  #titulo{
    
     font-family: "Raleway", sans-serif;
     color: var(--branco);
-    font-size: 70px;
+    width: 100%;
+    height: 50%;
+
     position: relative;
-    top: -50px;
+    top: -70px;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--branco);
+    text-align: center;
+  }
+
+  .descricao {
+    height: 30%; 
+    width: 80%; 
+    background-color: var(--preto-escuro);  
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  #bio {
+    text-align: center;
+    color: var(--cinza);
+  }
+
+  .icons{
+    text-align: center;
+  }
+  .icons img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    
   }

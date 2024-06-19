@@ -11,6 +11,12 @@ fetch(url)
   .then(data => {
     const avatar = document.getElementById("github-profile");
     avatar.src = data.avatar_url;
+    let usuario = document.getElementById("titulo");
+    usuario.innerText = data.login;
+    let nome = document.getElementById("nome");
+    nome.innerText = data.name;
+    let bio = document.getElementById("bio");
+    bio.innerText = data.bio;
     
   })
   .catch(error => {
