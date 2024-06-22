@@ -1,5 +1,5 @@
 const url = 'https://api.github.com/users/MariaRuasCode';
-const dbREPO = 'http://localhost:3000/repos';
+const dbREPO = 'https://api.github.com/users/MariaRuasCode/repos';
 const dbIMAGEM = 'http://localhost:3000/Imagens';
 const dbColegas = 'http://localhost:3000/colegas';
 
@@ -45,9 +45,12 @@ fetch(url)
           repoCard.innerHTML = `
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">${projeto.titulo}</h5>
-                <p class="card-text">${projeto.descricao}</p>
+                <h5 class="card-title">${projeto.name}</h5>
+                <p class="card-text">${projeto.description}</p>
                 <a href="repos.html?id=${projeto.id}" class="btn btn-primary">Detalhes</a>
+                <p>visualizações: ${projeto.fork}<p>
+                <p>total de estrelas: ${projeto.watchers_count}<p>
+
               </div>
             </div>`;
           RepoContainer.appendChild(repoCard);

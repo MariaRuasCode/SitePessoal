@@ -10,18 +10,32 @@
 </head>
 <main>
 <body style="background-color: black;">
-  
+    <header>
+        <a class = "logo"> Maria Luiza </a>
+        <a href = "https://github.com/MariaRuasCode?tab=following"> Colegas </a>
+        <a href="https://github.com/MariaRuasCode"> GitHub </a>
+        <a href = "./index.html"> Inicial </a>
+      </header>
+
     <div class="container mt-5">
-        <div style="background-color: #272728;" id="repoDetails" class="card">
+        <div style="background-color: black;" id="repoDetails" class="card">
             <div class="card-body">
                 <h5 id="repoTitle" class="card-title"></h5>
                 <p id="repoDescription" class="card-text"></p>
-                <p  class="card-text">total de estrlas: </p>
+                <h5 class="card-title">data de criação: </h5>
+                <p id="date" class="card-text"></p>
+                <p id="linguagem" class="card-text"></p>
+                <h5  class="card-title">total de estrlas: </h5>
                 <p id="estrela" class="card-text"></p>
-                <p  class="card-text">total de forks: </p>
+                <h5 class="card-title">total de forks: </h5>
                 <p id ="fork" class="card-text"></p>
+                <h5 class="card-title">topicos: </h5>
+                <p id ="topicos" class="card-text"></p>
+
+
                 
-                <a id="repoLink" style="background-color: red;" href="https://github.com/MariaRuasCode" class="btn btn-primary">Repositorio</a>
+                <a id="repoLink" style="background-color: red;" class="btn btn-primary">Repositorio</a>
+                
             </div>
         </div>
     </div>
@@ -37,24 +51,27 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
-            const repoId = urlParams.get('id');
-            const dbREPO = 'http://localhost:3000/repos'; 
+            const repoId = Number(urlParams.get('id')); 
+            const dbREPO = 'https://api.github.com/users/MariaRuasCode/repos'; 
             fetch(dbREPO)
                 .then(response => response.json())
                 .then(data => {
                     let repo = data.find(projeto => projeto.id === repoId);
                     if (repo) {
-                        document.getElementById('repoTitle').innerText = repo.titulo;
-                        document.getElementById('repoDescription').innerText = repo.descricao;
-                        document.getElementById('date').innerText = repo.date;
+                        document.getElementById('repoTitle').innerText = repo.name;
+                        document.getElementById('repoDescription').innerText = repo.description;
+                        document.getElementById('date').innerText = new Date(repo.created_at).toLocaleDateString();
+                        document.getElementById('linguagem').innerText = repo.language;
                         document.getElementById('fork').innerText = repo.fork;
-                        document.getElementById('estrela').innerText = repo.estrelas;
-                       
+                        document.getElementById('estrela').innerText = repo.stargazers_count;
+                        document.getElementById('repoLink').href = repo.html_url; 
+                        document.getElementById('topicos').href = repo.topics; 
                     } else {
-                        document.getElementById('repoDetails').innerHTML = '<p class="text-danger">Repositorio n encontrado</p>';
+                        document.getElementById('repoDetails').innerHTML = '<p class="text-danger">Repositorio não encontrado</p>';
                     }
                 })
                 .catch(error => console.error('Error fetching the repository data:', error));
         });
     </script>
+    
 
