@@ -1,95 +1,96 @@
 {
-  "contatos": [
+  "colegas": [
       {
           "id": 1,
           "nome": "Leanne Graham",
-          "cidade": "Belo Horizonte",
-          "categoria": "amigos",
-          "email": "Sincere@april.biz",
-          "telefone": "1-770-736-8031",
+          "icon": "https://i.pinimg.com/564x/87/7b/01/877b01f7092146efb33a6848e786d892.jpg",
           "website": "hildegard.org"
       },
       {
           "id": 2,
           "nome": "Ervin Howell",
-          "cidade": "Betim",
-          "categoria": "familia",
-          "email": "Shanna@melissa.tv",
-          "telefone": "010-692-6593",
+         "icon": "https://i.pinimg.com/564x/3a/9c/92/3a9c926122d03d7865fd6872c643c4e8.jpg",
           "website": "anastasia.net"
       },
       {
           "id": 3,
           "nome": "Clementine Bauch",
-          "cidade": "Rio de Janeiro",
-          "categoria": "trabalho",
-          "email": "Nathan@yesenia.net",
-          "telefone": "1-463-123-4447",
+         "icon": "https://i.pinimg.com/564x/71/dc/bc/71dcbca070701fa4c49faf1475b6c5a0.jpg",
           "website": "ramiro.info"
       },
       {
           "id": 4,
           "nome": "Patricia Lebsack",
-          "cidade": "Betim",
-          "categoria": "trabalho",
-          "email": "Julianne.OConner@kory.org",
-          "telefone": "493-170-9623 x156",
+         "icon": "https://i.pinimg.com/564x/67/d6/95/67d695d0240babc080d9069defbc5064.jpg",
           "website": "kale.biz"
       },
       {
           "id": 5,
-          "nome": "Chelsey Dietrich",
-          "cidade": "São Paulo",
-          "categoria": "familia",
-          "email": "Lucio_Hettinger@annie.ca",
-          "telefone": "(254)954-1289",
+          "nome": "Loid alancart",
+          "icon": "https://i.pinimg.com/564x/36/84/33/3684337d5bf8e8b847cbae96c76d1407.jpg",
           "website": "demarco.info"
-      },
-      {
-          "id": 6,
-          "nome": "Mrs. Dennis Schulist",
-          "cidade": "Rio de Janeiro",
-          "categoria": "trabalho",
-          "email": "Karley_Dach@jasper.info",
-          "telefone": "1-477-935-8478",
-          "website": "ola.org"
-      },
-      {
-          "id": 7,
-          "nome": "Kurtis Weissnat",
-          "cidade": "Belo Horizonte",
-          "categoria": "amigos",
-          "email": "Telly.Hoeger@billy.biz",
-          "telefone": "210.067.6132",
-          "website": "elvis.io"
-      },
-      {
-          "id": 8,
-          "nome": "Nicholas Runolfsdottir V",
-          "cidade": "Belo Horizonte",
-          "categoria": "familia",
-          "email": "Sherwood@rosamond.me",
-          "telefone": "586.493.6943",
-          "website": "jacynthe.com"
-      },
-      {
-          "id": 9,
-          "nome": "Glenna Reichert",
-          "cidade": "Betim",
-          "categoria": "amigos",
-          "email": "Chaim_McDermott@dana.io",
-          "telefone": "(775)976-6794",
-          "website": "conrad.com"
-      },
-      {
-          "id": 10,
-          "nome": "Clementina DuBuque",
-          "cidade": "São Paulo",
-          "categoria": "amigos",
-          "email": "Rey.Padberg@karina.biz",
-          "telefone": "024-648-3804",
-          "website": "ambrose.net"
       }
+  ],
+
+  "Imagens": 
+  [
+   
+    {
+        "id": "timmy",
+        "url": "https://64.media.tumblr.com/71fd6eb296b99e9250108cdbefa9060f/59b93c97e18edabd-34/s2048x3072/81441fbeaad328d6c5aaa13cba910d7da30609e2.pnj",
+        "desc": "Desevolvimento Web"
+    },
+    {
+        "id": "garmadon",
+        "url": "https://64.media.tumblr.com/52ff2446982c139b7f5a37631427911a/43a4fc8929b6e333-cb/s2048x3072/24dcf1c04f6edc091407145768e50ed7c88b293e.pnj",
+        "desc": "Front-End"
+},
+    {
+        "id": "wolf",
+        "url": "https://64.media.tumblr.com/76afd1d60d3a5b56cd3c380aede54596/b0427ba5d69ba0cc-32/s2048x3072/10acd86ed0a574e75c4bb4dd5dc5c859df9f2984.pnj",
+        "desc": "Back-End"
+    },
+    {
+        "id": "Cursed",
+        "url": "https://64.media.tumblr.com/22c86bc1238a3d5ec999d386295a1435/52b588848cb59572-70/s2048x3072/0056111eee6c5fcd12b42ea8bfd79db331e842a1.pnj",
+        "desc": "Design"
+    },
+    {
+        "id": "flowers",
+        "url": "https://64.media.tumblr.com/f4666d1ecdd3e7e53fe08009d4877cbf/52b588848cb59572-48/s2048x3072/fa5968dba224be15cce306c8f227d1f977d3531a.pnj",
+        "desc": "Imaginação"
+    }
+  ],
+
+  "repos":
+  [
+    {
+        "id": "1",
+        "titulo": "Projeto C#",
+        "descricao": "Todos meus projetos trabalhando no codigo c#",
+        "date": "Criado 2/02/24",
+        "estrelas": "5",
+        "forks":"2"
+        
+    },
+    {
+        "id": "2",
+        "titulo": "Teste com Angular",
+        "descricao": "Teste dp framework angular",
+        "date": "Criado 21/04/24",
+        "estrelas": "2",
+        "forks": 3
+
+    },
+    {
+        "id": "3",
+        "titulo": "GoLang aprendendo",
+        "descricao": "minha evolução na linguagem GoLang",
+        "date": " Criado em 21/06/24",
+        "estrelas": "10",
+        "forks": "0"
+
+    }
   ]
-  
 }
+

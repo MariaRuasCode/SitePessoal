@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+
+  --highlight: #db1c1c;
+  --branco: #f3f3ef;
+  --cinza: #ccccc4;
+  --preto-claro: #272728;
+  --preto-escuro: #0f0f0f;
+}
+body{
+    background-color: #0a0a0a;
+}
+header {
+    background-color: #1b1b1b;
+    overflow: hidden;
+    letter-spacing: 3px;
+   
+}
+p {
+  color: var(--preto-escuro);
+  font-size: 25px;
+}
+
+
+header a {
+    float: right;
+  color: #f2f2f2 !important;
+  text-align: center;
+  padding: 14px 16px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+}
+header .logo {
+    float: left;
+    font-family: "Bebas Neue", sans-serif;
+
+    
+    font-style: normal;
+}
+
+header a:hover {
+    background-color: #2b2828;
+    color: black;
+}
+
+header .logo:hover {
+
+  background-color: #1b1b1b;
+}
+
+
+
+
+.carousel {
+   
+    margin: auto; 
+   
+  }
+  .carousel-inner img {
+    width: 90% !important;
+    height: 80% !important;
+    margin: auto;
+    object-fit: cover;
+  }
+
+
+  #github-profile {
+    border-radius: 50%;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top: -100px; 
+   z-index: 0;
+    width: 17%;
+   border-radius: 50%; /* Optional: to make it circular */
+   border: 8px solid #050505; /* Optional: add a border to the image */
+  }
+
+
+  #titulo{
+   
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--highlight);
+    width: 100%;
+    height: 50%;
+    letter-spacing: 3px;
+    font-size: 65px;
+
+    position: relative;
+    top: -70px;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--branco);
+    text-align: center;
+  }
+
+  .descricao {
+    height: 30%; 
+    width: 80%; 
+    background-color: var(--preto-escuro);  
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: -50px; 
+  }
+
+  #bio {
+    text-align: center;
+    color: var(--cinza);
+  }
+
+  .icons{
+    text-align: center;
+  }
+  .icons img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+  
+  .repo{
+   
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    width: 80%;
+   height: 250px;
+   margin: 10px;
+   padding: 5px;
+    background-color: var(--preto-claro);
+    color: var(--branco);
+    text-align: center;
+    
+   
+  }
+
+  .card p {
+    color: var(--cinza);
+  }
+
+  .btn {
+    background-color: var(--highlight);
+    border-color: var(--highlight);
+  }
+
+  .btn:hover{
+    background-color: #971f1f;
+    border-color: #971f1f ;
+  }
+
+  .Colegas {
+    
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Colega {
+    width: 80%;
+   height: 250px;
+   margin: 10px;
+   padding: 5px;
+    background-color: var(--preto-claro);
+    color: var(--branco);
+    text-align: center;
+    
+  }
+
+  .Colega p {
+    color: var(--branco);
+  }
+  .Colega img{
+    width: 100px;
+   height: 100px;
+   object-fit: cover;
+   
+  }
+
+  .carousel-item h5 {
+    position: relative;
+    top: -100px; 
+    font-family:"Bebas Neue", sans-serif;
+    font-size: 60px;
+  }
